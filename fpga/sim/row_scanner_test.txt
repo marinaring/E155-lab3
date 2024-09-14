@@ -1,0 +1,23 @@
+// cols_rowsexpected_changeexpected
+// no button pressed
+0000_0001_0
+0000_0010_0
+0000_0100_0
+0000_1000_0
+0000_0001_0
+0100_0010_0 // button pressed in row 1
+0000_0010_1 // button let go -> pulse state
+0000_0010_0
+0000_0100_0
+0000_1000_0
+0010_0001_0 // button pressed in row 0
+0010_0001_1 
+0010_0001_0
+0010_0001_0
+0010_0001_0 
+0000_0001_0 // button let go -> waiting state
+0000_0001_0
+0000_0010_0
+0000_0100_0
+
+

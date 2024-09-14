@@ -5,8 +5,8 @@
 
 module lab3_mr(
 	input   logic reset,
-    input   logic [3:0] rows,
 	input   logic [3:0] cols,
+	output   logic [3:0] rows,
 	output  logic [1:0] transistor,
 	output  logic [6:0] seg
 );
@@ -22,8 +22,8 @@ module lab3_mr(
 	HSOSC #(.CLKHF_DIV(2'b01)) 
          hf_osc (.CLKHFPU(1'b1), .CLKHFEN(1'b1), .CLKHF(int_osc));
 	
-
-	// output logic
+	// synchronizer sync(int_osc, cols, cols_sync);
+	digit_controller keypad_input(int_osc, reset, cols_sync, rows, val);
 	seg_multiplexer seg_display(int_osc, reset, val, multi_switch, s_seg);
 	seg_logic digit(s_seg, not_seg);
 		

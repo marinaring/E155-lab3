@@ -3,16 +3,18 @@
 	A module that will carry out switching through rows for the keypad
 */
 
+// define variable type for state
+//typedef enum logic [3:0] {R0, R1, R2, R3, P0, P1, P2, P3, W0, W1, W2, W3} statetype;
+import statetype_package::*;
+
 module row_scanner(
 	input logic clk,
 	input logic reset,
-	input logic [3:0] rows,
-	inpuy logic [3:0] cols,
-	output logic row_out
+	input logic [3:0] cols,
+	output logic [3:0] rows,
+	output logic change
 );
 
-	// define variable type for state
-	typedef enum logic [1:0] {R0, R1, R2, R3} statetype;
 	statetype state, nextstate;
 
 	// state register
@@ -26,11 +28,12 @@ module row_scanner(
 	end
 	
 	// next state logic
-	always_comb
-		case(state)
-			R0: if 
-			R1:
-			R2:
-			R3:
-			default: R0
-		endcase
+	scanner_next_state scan(state, cols, nextstate);
+	
+	// output logic
+	assign rows[0] = (state == R0 || state == P0 || state == W0);
+	assign rows[1] = (state == R1 || state == P1 || state == W1);
+	assign rows[2] = (state == R2 || state == P2 || state == W2);
+	assign rows[3] = (state == R3 || state == P3 || state == W3);
+	assign change = (state == P0 || state == P1 || state == P2 || state == P3);	
+endmodule

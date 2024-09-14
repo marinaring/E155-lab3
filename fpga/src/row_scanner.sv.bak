@@ -1,0 +1,37 @@
+/*
+	Marina Ring, mring@hmc.edu, 9/13/2024
+	A module that will carry out switching through rows for the keypad
+*/
+
+module row_scanner(
+	input logic clk,
+	input logic reset,
+	input logic [3:0] cols,
+	output logic [3:0] rows,
+	output logic change
+);
+
+	// define variable type for state
+	typedef enum logic [3:0] {R0, R1, R2, R3, P0, P1, P2, P3, W0, W1, W2, W3} statetype;
+	statetype state, nextstate;
+
+	// state register
+	always_ff @(posedge clk) begin
+		if (~reset) begin
+			state <= R0;
+		end
+		else begin
+			state <= nextstate;
+		end
+	end
+	
+	// next state logic
+	scanner_next_state(state, cols, nextstate);
+	
+	// output logic
+	assign rows[0] = (state == R0 or state == P0 or state == W0);
+	assign rows[1] = (state == R1 or state == P1 or state == W1);
+	assign rows[2] = (state == R2 or state == P2 or state == W2);
+	assign rows[3] = (state == R3 or state == P3 or state == W3);
+	assign change = (state == P0 or state == P1 or state == P2 or state == P3);	
+endmodule

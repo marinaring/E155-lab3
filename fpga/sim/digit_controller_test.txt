@@ -1,0 +1,24 @@
+// cols_rows_val
+0000__0001__0000_0000
+0000__0010__0000_0000
+0000__0100__0000_0000
+0000__1000__0000_0000
+0000__0001__0000_0000
+0100__0010__0000_0000 // button pressed
+0100__0010__0000_0000 // pulse state, send signal to change
+0100__0010__0000_0110 // digits change, waiting state
+0100__0010__0000_0110
+0000__0010__0000_0110 // button released in waiting state
+0000__0010__0000_0110 // back to scanning
+0000__0100__0000_0110
+0000__1000__0000_0110
+0001__0001__0000_0110 // button pressed
+0001__0001__0000_0110 // pulse state, send signal to change
+0000__0001__0110_0001 // digits change, button released in waiting state
+0000__0001__0110_0001 // back to scanning
+0000__0010__0110_0001 
+0000__0100__0110_0001
+0100__1000__0110_0001 // button pressed
+0000__1000__0110_0001 // pulse state, send signal to change, button released
+0000__1000__0001_1111 // digits change
+0000__0001__0001_1111 
