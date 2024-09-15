@@ -15,6 +15,7 @@ module lab3_mr(
 	logic [6:0] not_seg;
 	logic [3:0] s_seg;
 	logic [7:0] val; // 2 digit hexadecimal is 8 digit binary	
+	logic [3:0] cols_sync;
 	logic int_osc;
 
 
@@ -22,7 +23,7 @@ module lab3_mr(
 	HSOSC #(.CLKHF_DIV(2'b01)) 
          hf_osc (.CLKHFPU(1'b1), .CLKHFEN(1'b1), .CLKHF(int_osc));
 	
-	// synchronizer sync(int_osc, cols, cols_sync);
+	synchronizer sync(int_osc, cols, cols_sync);
 	digit_controller keypad_input(int_osc, reset, cols_sync, rows, val);
 	seg_multiplexer seg_display(int_osc, reset, val, multi_switch, s_seg);
 	seg_logic digit(s_seg, not_seg);

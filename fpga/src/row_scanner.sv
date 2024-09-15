@@ -16,24 +16,28 @@ module row_scanner(
 );
 
 	statetype state, nextstate;
+	logic [5:0] counter;
 
 	// state register
 	always_ff @(posedge clk) begin
 		if (~reset) begin
 			state <= R0;
+			counter <= 0;
 		end
 		else begin
+			// reset counter when scanning for columns, and then increment otherwise.
+			counter <= (state == RC0 || state == RC1 || state == RC2 || state == RC3) ? 0 : counter + 1;
 			state <= nextstate;
 		end
 	end
 	
 	// next state logic
-	scanner_next_state scan(state, cols, nextstate);
+	scanner_next_state scan(state, cols, counter, nextstate);
 	
 	// output logic
-	assign rows[0] = (state == R0 || state == P0 || state == W0);
-	assign rows[1] = (state == R1 || state == P1 || state == W1);
-	assign rows[2] = (state == R2 || state == P2 || state == W2);
-	assign rows[3] = (state == R3 || state == P3 || state == W3);
+	assign rows[0] = (state == R0 || state == RC0 || state == P0 || state == W0);
+	assign rows[1] = (state == R1 || state == RC1 || state == P1 || state == W1);
+	assign rows[2] = (state == R2 || state == RC2 || state == P2 || state == W2);
+	assign rows[3] = (state == R3 || state == RC3 || state == P3 || state == W3);
 	assign change = (state == P0 || state == P1 || state == P2 || state == P3);	
 endmodule

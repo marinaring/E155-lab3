@@ -3,11 +3,13 @@
 	A module that implements the next state logic for the row_scanner module. Made separate module to make it look cleaner
 */
 
-// define variable type for statetypedef enum logic [3:0] {R0, R1, R2, R3, P0, P1, P2, P3, W0, W1, W2, W3} statetype;
+// define variable type for state
+import statetype_package::*;
 
 module scanner_next_state(
 	input statetype state,
 	input logic [3:0] cols,
+	input logic [5:0] counter,
 	output statetype nextstate
 );
 	logic press;
@@ -17,18 +19,64 @@ module scanner_next_state(
 	
 	always_comb
 		case(state)
-			// in the scanning row state
+			// row turns on, we wait two clock cycles for the column signal to change after the row changes
 			R0: begin
-					nextstate = (press) ? P0 : R1;  
+					nextstate = (counter == 1) ? RC0 : R0;
 				end
 			R1: begin
-					nextstate = (press) ? P1 : R2;  
+					nextstate = (counter == 1) ? RC1 : R1;
 				end
 			R2: begin
-					nextstate = (press) ? P2 : R3;  
+					nextstate = (counter == 1) ? RC2 : R2;  
 				end
 			R3: begin
+					nextstate = (counter == 1) ? RC3 : R3;
+				end
+			// in the scanning row state
+			RC0: begin
+					nextstate = (press) ? P0 : R1;  
+				end
+			RC1: begin
+					nextstate = (press) ? P1 : R2;  
+				end
+			RC2: begin
+					nextstate = (press) ? P2 : R3;  
+				end
+			RC3: begin
 					nextstate = (press) ? P3 : R0;  
+				end
+			// debouncing state, we wait 10 clock cycles for the signal to settle
+			D0: begin
+					if (counter == 10) begin
+						nextstate = (press) ? P0 : RC0;
+					end
+					else begin
+						nextstate = D0;
+					end
+				end
+			D1: begin
+					if (counter == 10) begin
+						nextstate = (press) ? P1 : RC1;
+					end
+					else begin
+						nextstate = D1;
+					end
+				end
+			D2: begin
+					if (counter == 10) begin
+						nextstate = (press) ? P2 : RC2;
+					end
+					else begin
+						nextstate = D2;
+					end
+				end
+			D3: begin
+					if (counter == 10) begin
+						nextstate = (press) ? P3 : RC3;
+					end
+					else begin
+						nextstate = D3;
+					end
 				end
 			// in the sending pulse state (where pulse is the message that a row with a pressed button has been identified)
 			P0: begin
