@@ -34,7 +34,7 @@ module row_scanner_testbench();
 	always @(negedge clk)
 		if (reset) begin // skip during reset
 			if (rows != rows_expected || change != change_expected) begin // check result
-				$display("Error: input = %b", {cols});
+				$display("Error: cols = %b", {cols});
 				$display(" outputs = %b (%b expected)", {rows, change}, {rows_expected, change_expected});
 				errors = errors + 1;
 			end

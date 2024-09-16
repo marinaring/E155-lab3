@@ -16,10 +16,8 @@ module digit_controller(
 	logic [3:0] rows_out;
 	
 	// scan rows
-	row_scanner row_read(clk, reset, cols, rows_out, change);
-	
-	// decode row, column data into a digit
-	keypad_logic keypad(rows_out, cols, digit1);
+	row_scanner row_read(clk, reset, cols, rows_out, digit1);
+	keypad_logic keypad(rows_out, cols, digit1)
 
 	// if the row scanner indicates that a button has been pressed, put the first digit into the second digit and read in a new digit
 	always_ff @(posedge clk) begin

@@ -33,28 +33,12 @@ Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oc
 Top level modules:
 	lab3_mr
 
-} {} {}} C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/row_scanner.sv {1 {vlog -work work -sv -stats=none C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/row_scanner.sv
-Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
--- Compiling package row_scanner_sv_unit
--- Importing package statetype_package
--- Compiling module row_scanner
-
-Top level modules:
-	row_scanner
-
 } {} {}} C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/seg_multiplexer.sv {1 {vlog -work work -sv -stats=none C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/seg_multiplexer.sv
 Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
 -- Compiling module seg_multiplexer
 
 Top level modules:
 	seg_multiplexer
-
-} {} {}} C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/digit_controller.sv {1 {vlog -work work -sv -stats=none C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/digit_controller.sv
-Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
--- Compiling module digit_controller
-
-Top level modules:
-	digit_controller
 
 } {} {}} C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/sim/digit_controller_testbench.sv {1 {vlog -work work -sv -stats=none C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/sim/digit_controller_testbench.sv
 Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
@@ -84,6 +68,22 @@ Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oc
 Top level modules:
 	synchronizer
 
+} {} {}} C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/scanner_next_state.sv {1 {vlog -work work -sv -stats=none C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/scanner_next_state.sv
+Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
+-- Compiling package scanner_next_state_sv_unit
+-- Importing package statetype_package
+-- Compiling module scanner_next_state
+
+Top level modules:
+	scanner_next_state
+
+} {} {}} C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/seg_multiplexer_testbench.sv {1 {vlog -work work -sv -stats=none C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/seg_multiplexer_testbench.sv
+Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
+-- Compiling module seg_multiplexer_testbench
+
+Top level modules:
+	seg_multiplexer_testbench
+
 } {} {}} C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/sim/scanner_next_state_testbench.sv {1 {vlog -work work -sv -stats=none C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/sim/scanner_next_state_testbench.sv
 Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
 -- Compiling package scanner_next_state_testbench_sv_unit
@@ -92,12 +92,5 @@ Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oc
 
 Top level modules:
 	scanner_next_state_testbench
-
-} {} {}} C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/seg_multiplexer_testbench.sv {1 {vlog -work work -sv -stats=none C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/seg_multiplexer_testbench.sv
-Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
--- Compiling module seg_multiplexer_testbench
-
-Top level modules:
-	seg_multiplexer_testbench
 
 } {} {}}

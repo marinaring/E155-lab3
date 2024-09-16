@@ -80,29 +80,29 @@ module scanner_next_state(
 				end
 			// in the sending pulse state (where pulse is the message that a row with a pressed button has been identified)
 			P0: begin
-					nextstate = (press) ? W0 : R0;  
+					nextstate = (press) ? W0 : RC0;  
 				end
 			P1: begin
-					nextstate = (press) ? W1 : R1;  
+					nextstate = (press) ? W1 : RC1;  
 				end
 			P2: begin
-					nextstate = (press) ? W2 : R2;  
+					nextstate = (press) ? W2 : RC2;  
 				end
 			P3: begin
-					nextstate = (press) ? W3 : R3;  
+					nextstate = (press) ? W3 : RC3;  
 				end
 			// in the waiting state (waiting for pressed button to be released)
 			W0: begin
-					nextstate = (press) ? W0 : R0;  
+					nextstate = (press) ? W0 : RC0;  
 				end
 			W1: begin
-					nextstate = (press) ? W1 : R1;  
+					nextstate = (press) ? W1 : RC1;  
 				end
 			W2: begin
-					nextstate = (press) ? W2 : R2;  
+					nextstate = (press) ? W2 : RC2;  
 				end
 			W3: begin
-					nextstate = (press) ? W3 : R3;  
+					nextstate = (press) ? W3 : RC3;  
 				end
 			default: nextstate = R0;
 		endcase
