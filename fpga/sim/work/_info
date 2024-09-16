@@ -12,32 +12,32 @@ cModel Technology
 dC:/lscc/radiant/3.2/modeltech/win32loem
 vdigit_controller
 Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z1 !s110 1726450433
+Z1 !s110 1726462908
 !i10b 1
-!s100 ER5MFjeNj=07U7Zge2L4E1
-I11d]1>ThbLSfi8?4mocfA1
+!s100 eUh^A=5I`_k4^;JkS_24>0
+I;z6V:HIDARg^3c0JQP^]I1
 S1
 Z2 dC:/Users/mring/Documents/MicroPs/E155-lab3/fpga/sim
-w1726299906
+w1726462899
 8C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/digit_controller.sv
 FC:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/digit_controller.sv
-!i122 488
-L0 6 32
-Z3 VDg1SIo80bB@j0V0VzS_@n1
-Z4 OT;L;2021.4;73
+!i122 561
+Z3 L0 6 33
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OT;L;2021.4;73
 r1
 !s85 0
 31
-Z5 !s108 1726450433.000000
+Z6 !s108 1726462908.000000
 !s107 C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/digit_controller.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/digit_controller.sv|
 !s101 -O0
 !i113 1
-Z6 o-work work -sv -O0
-Z7 tCvgOpt 0
+Z7 o-work work -sv -O0
+Z8 tCvgOpt 0
 vdigit_controller_testbench
 R0
-Z8 !s110 1726450434
+Z9 !s110 1726462912
 !i10b 1
 !s100 LDZ14@hTQTzEi9[1N=S4f0
 If<aZJ`6;:5Rjo;ceaR:;o3
@@ -46,20 +46,20 @@ R2
 w1726299741
 8C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/sim/digit_controller_testbench.sv
 FC:/Users/mring/Documents/MicroPs/E155-lab3/fpga/sim/digit_controller_testbench.sv
-!i122 501
+!i122 574
 L0 7 40
-R3
 R4
+R5
 r1
 !s85 0
 31
-Z9 !s108 1726450434.000000
+Z10 !s108 1726462912.000000
 !s107 C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/sim/digit_controller_testbench.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/sim/digit_controller_testbench.sv|
 !s101 -O0
 !i113 1
-R6
 R7
+R8
 vkeypad_logic
 R0
 R1
@@ -71,20 +71,20 @@ R2
 w1726289034
 8C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/keypad_logic.sv
 FC:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/keypad_logic.sv
-!i122 489
+!i122 562
 L0 6 52
-R3
 R4
+R5
 r1
 !s85 0
 31
-R5
+R6
 !s107 C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/keypad_logic.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/keypad_logic.sv|
 !s101 -O0
 !i113 1
-R6
 R7
+R8
 vlab3_mr
 R0
 R1
@@ -96,108 +96,108 @@ R2
 w1726441482
 8C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/lab3_mr.sv
 FC:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/lab3_mr.sv
-!i122 490
-L0 6 33
+!i122 563
 R3
 R4
+R5
 r1
 !s85 0
 31
-R5
+R6
 !s107 C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/lab3_mr.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/lab3_mr.sv|
 !s101 -O0
 !i113 1
-R6
 R7
+R8
 vrow_scanner
 R0
-Z10 DXx4 work 17 statetype_package 0 22 `UXzYFNIj_6g5NB[@aCDF3
-DXx4 work 19 row_scanner_sv_unit 0 22 6:A8J?6bh=g3<mBQQ_>162
+Z11 DXx4 work 17 statetype_package 0 22 `UXzYFNIj_6g5NB[@aCDF3
+DXx4 work 19 row_scanner_sv_unit 0 22 LWl0aAZA0F1KEo7<AX:h:1
 R1
-R3
+R4
 r1
 !s85 0
 !i10b 1
-!s100 <MbL;J<?zN9bj[;=lLW6@0
-I]bBJzQmUSlShd>j9Um8a60
+!s100 68LN0B2]hhOgSaodADNI91
+IgE<cKDYcC4c3IL@CRNT]Z3
 !s105 row_scanner_sv_unit
 S1
 R2
-Z11 w1726449447
-Z12 8C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/row_scanner.sv
-Z13 FC:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/row_scanner.sv
-!i122 491
-L0 10 34
-R4
-31
+Z12 w1726462772
+Z13 8C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/row_scanner.sv
+Z14 FC:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/row_scanner.sv
+!i122 564
+L0 10 36
 R5
-Z14 !s107 C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/row_scanner.sv|
-Z15 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/row_scanner.sv|
+31
+R6
+Z15 !s107 C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/row_scanner.sv|
+Z16 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/row_scanner.sv|
 !s101 -O0
 !i113 1
-R6
 R7
+R8
 Xrow_scanner_sv_unit
-Z16 !s125 LATTICE_CONN
+Z17 !s125 LATTICE_CONN
 R0
-R10
-R16
+R11
+R17
 R1
-V6:A8J?6bh=g3<mBQQ_>162
+VLWl0aAZA0F1KEo7<AX:h:1
 r1
 !s85 0
 !i10b 1
-!s100 1l:XV^aEDH5kanb=F:[]e1
-I6:A8J?6bh=g3<mBQQ_>162
+!s100 af2MYgRT@_>QOmSX5nC@c2
+ILWl0aAZA0F1KEo7<AX:h:1
 !i103 1
 S1
 R2
-R11
 R12
 R13
-!i122 491
-Z17 L0 8 0
-R4
-31
-R5
 R14
+!i122 564
+Z18 L0 8 0
+R5
+31
+R6
 R15
+R16
 !s101 -O0
 !i113 1
-R6
 R7
+R8
 vrow_scanner_testbench
 R0
-R1
+Z19 !s110 1726462909
 !i10b 1
-!s100 m7Om;:XZF3Ch5ckY`__l32
-I=MokfT^0VY]T7GRJ:JT>W1
+!s100 @SIZe?X_c^in7]LzCYH^z2
+I]oTDdfaal=M>8_3YSRS@M2
 S1
 R2
-w1726450395
+w1726462580
 8C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/sim/row_scanner_testbench.sv
 FC:/Users/mring/Documents/MicroPs/E155-lab3/fpga/sim/row_scanner_testbench.sv
-!i122 498
-Z18 L0 8 40
-R3
+!i122 571
+Z20 L0 8 40
 R4
+R5
 r1
 !s85 0
 31
-R5
+Z21 !s108 1726462909.000000
 !s107 C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/sim/row_scanner_testbench.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/sim/row_scanner_testbench.sv|
 !s101 -O0
 !i113 1
-R6
 R7
+R8
 vscanner_next_state
 R0
-R10
+R11
 DXx4 work 26 scanner_next_state_sv_unit 0 22 9k^^cc_8LCLP9k93H>B9I0
 R1
-R3
+R4
 r1
 !s85 0
 !i10b 1
@@ -206,25 +206,25 @@ I`C22[e91dcBAf@]Rbi`Ob3
 !s105 scanner_next_state_sv_unit
 S1
 R2
-Z19 w1726449641
-Z20 8C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/scanner_next_state.sv
-Z21 FC:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/scanner_next_state.sv
-!i122 492
+Z22 w1726449641
+Z23 8C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/scanner_next_state.sv
+Z24 FC:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/scanner_next_state.sv
+!i122 565
 L0 9 102
-R4
-31
 R5
-Z22 !s107 C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/scanner_next_state.sv|
-Z23 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/scanner_next_state.sv|
+31
+R6
+Z25 !s107 C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/scanner_next_state.sv|
+Z26 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/scanner_next_state.sv|
 !s101 -O0
 !i113 1
-R6
 R7
+R8
 Xscanner_next_state_sv_unit
-R16
+R17
 R0
-R10
-R16
+R11
+R17
 R1
 V9k^^cc_8LCLP9k93H>B9I0
 r1
@@ -235,26 +235,26 @@ I9k^^cc_8LCLP9k93H>B9I0
 !i103 1
 S1
 R2
-R19
-R20
-R21
-!i122 492
-L0 7 0
-R4
-31
-R5
 R22
 R23
+R24
+!i122 565
+L0 7 0
+R5
+31
+R6
+R25
+R26
 !s101 -O0
 !i113 1
-R6
 R7
+R8
 vscanner_next_state_testbench
 R0
-R10
+R11
 DXx4 work 36 scanner_next_state_testbench_sv_unit 0 22 QVL7FJgGDlT;<>35P^BQg0
-R8
-R3
+R19
+R4
 r1
 !s85 0
 !i10b 1
@@ -263,26 +263,26 @@ IZZP2Q^8m4GYfj9gCaRc=a2
 !s105 scanner_next_state_testbench_sv_unit
 S1
 R2
-Z24 w1726442061
-Z25 8C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/sim/scanner_next_state_testbench.sv
-Z26 FC:/Users/mring/Documents/MicroPs/E155-lab3/fpga/sim/scanner_next_state_testbench.sv
-!i122 499
+Z27 w1726442061
+Z28 8C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/sim/scanner_next_state_testbench.sv
+Z29 FC:/Users/mring/Documents/MicroPs/E155-lab3/fpga/sim/scanner_next_state_testbench.sv
+!i122 572
 L0 10 43
-R4
-31
 R5
-Z27 !s107 C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/sim/scanner_next_state_testbench.sv|
-Z28 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/sim/scanner_next_state_testbench.sv|
+31
+R21
+Z30 !s107 C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/sim/scanner_next_state_testbench.sv|
+Z31 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/sim/scanner_next_state_testbench.sv|
 !s101 -O0
 !i113 1
-R6
 R7
-Xscanner_next_state_testbench_sv_unit
-R16
-R0
-R10
-R16
 R8
+Xscanner_next_state_testbench_sv_unit
+R17
+R0
+R11
+R17
+R19
 VQVL7FJgGDlT;<>35P^BQg0
 r1
 !s85 0
@@ -292,20 +292,20 @@ IQVL7FJgGDlT;<>35P^BQg0
 !i103 1
 S1
 R2
-R24
-R25
-R26
-!i122 499
-R17
-R4
-31
-R5
 R27
 R28
+R29
+!i122 572
+R18
+R5
+31
+R21
+R30
+R31
 !s101 -O0
 !i113 1
-R6
 R7
+R8
 vseg_logic
 R0
 R1
@@ -314,23 +314,23 @@ R1
 IcO9X3fXbffc=M@Wc=8k@<2
 S1
 R2
-Z29 w1726177799
+Z32 w1726177799
 8C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/seg_logic.sv
 FC:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/seg_logic.sv
-!i122 493
+!i122 566
 L0 6 27
-R3
 R4
+R5
 r1
 !s85 0
 31
-R5
+R6
 !s107 C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/seg_logic.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/seg_logic.sv|
 !s101 -O0
 !i113 1
-R6
 R7
+R8
 vseg_multiplexer
 R0
 R1
@@ -342,20 +342,20 @@ R2
 w1726270644
 8C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/seg_multiplexer.sv
 FC:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/seg_multiplexer.sv
-!i122 495
+!i122 568
 L0 8 39
-R3
 R4
+R5
 r1
 !s85 0
 31
-R5
+R6
 !s107 C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/seg_multiplexer.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/seg_multiplexer.sv|
 !s101 -O0
 !i113 1
-R6
 R7
+R8
 vseg_multiplexer_testbench
 R0
 R1
@@ -364,26 +364,26 @@ R1
 Im^5bhiW@`z:VbB3C`h36Y3
 S1
 R2
-R29
+R32
 8C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/seg_multiplexer_testbench.sv
 FC:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/seg_multiplexer_testbench.sv
-!i122 496
+!i122 569
 L0 7 43
-R3
 R4
+R5
 r1
 !s85 0
 31
-R5
+R6
 !s107 C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/seg_multiplexer_testbench.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/seg_multiplexer_testbench.sv|
 !s101 -O0
 !i113 1
-R6
 R7
+R8
 vseg_testbench
 R0
-R8
+R9
 !i10b 1
 !s100 [jABkOlB>1ZGGAn[OjW[c0
 I]2@WeElKFRULi;J6H<5hc0
@@ -392,23 +392,23 @@ R2
 w1726300189
 8C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/sim/keypad_logic_testbench.sv
 FC:/Users/mring/Documents/MicroPs/E155-lab3/fpga/sim/keypad_logic_testbench.sv
-!i122 502
-R18
-R3
+!i122 575
+R20
 R4
+R5
 r1
 !s85 0
 31
-R9
+R10
 !s107 C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/sim/keypad_logic_testbench.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/sim/keypad_logic_testbench.sv|
 !s101 -O0
 !i113 1
-R6
 R7
+R8
 Xstatetype_package
 R0
-R8
+!s110 1726462910
 !i10b 1
 !s100 >U51?Z9D_]1[2L_dYII]`1
 I`UXzYFNIj_6g5NB[@aCDF3
@@ -417,23 +417,23 @@ R2
 w1726436758
 8C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/statetype_package.sv
 FC:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/statetype_package.sv
-!i122 500
+!i122 573
 L0 6 0
 V`UXzYFNIj_6g5NB[@aCDF3
-R4
+R5
 r1
 !s85 0
 31
-R9
+!s108 1726462910.000000
 !s107 C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/statetype_package.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/statetype_package.sv|
 !s101 -O0
 !i113 1
-R6
 R7
+R8
 vsynchronizer
 R0
-R1
+R19
 !i10b 1
 !s100 f_mS83KDQDBLdg@5P=MhE3
 INLJV[4h20H>i[MbWVcT2H1
@@ -442,17 +442,17 @@ R2
 w1726284385
 8C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/synchronizer.sv
 FC:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/synchronizer.sv
-!i122 497
+!i122 570
 L0 6 15
-R3
 R4
+R5
 r1
 !s85 0
 31
-R5
+R6
 !s107 C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/synchronizer.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/synchronizer.sv|
 !s101 -O0
 !i113 1
-R6
 R7
+R8

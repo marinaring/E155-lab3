@@ -8,11 +8,11 @@
 module row_scanner_testbench();
 	logic clk, reset;
 	logic [3:0] cols, rows, rows_expected;
-	logic change_expected;
+	logic change, press, press_expected, change_expected;
 	logic [31:0] vectornum, errors;
-	logic [8:0] testvectors[10000:0];
+	logic [9:0] testvectors[10000:0];
 	
-	row_scanner scanner(clk, reset, cols, rows, change);
+	row_scanner scanner(clk, reset, cols, rows, press, change);
 	
 	always 
 		begin
@@ -28,18 +28,18 @@ module row_scanner_testbench();
 	
 	always @(posedge clk)
 		begin
-			#1; {cols, rows_expected, change_expected} = testvectors[vectornum];
+			#1; {cols, rows_expected, press_expected, change_expected} = testvectors[vectornum];
 		end
 		
 	always @(negedge clk)
 		if (reset) begin // skip during reset
 			if (rows != rows_expected || change != change_expected) begin // check result
-				$display("Error: input = %b", {cols});
-				$display(" outputs = %b (%b expected)", {rows, change}, {rows_expected, change_expected});
+				$display("Error: cols = %b", {cols});
+				$display(" outputs = %b (%b expected)", {rows, press, change}, {rows_expected, change_expected});
 				errors = errors + 1;
 			end
 			vectornum = vectornum + 1;
-			if (testvectors[vectornum] === 9'bx) begin
+			if (testvectors[vectornum] === 10'bx) begin
 				$display("%d tests completed with %d errors", vectornum, errors);
 				$stop;
 			end
