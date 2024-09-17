@@ -1,1 +1,1 @@
-This is the code for my Lab 2 in Microprocessor systems. In this lab, I learn how to implement time multiplexing on an FPGA in order to reduce the number of I/O outputs. 
+This is the code for my Lab 3 in Microprocessor systems. In this lab, I learned how to combine my multiplexed display from Lab 2 with a matrix keypad input. 
