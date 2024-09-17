@@ -1,3 +1,6 @@
+// Marina Ring, mring@g.hmc.edu, 9/16/2024
+// This test was done assuming the counter is 6 bits
+// and that the debounce state lasts for ten clock cycles
 // cols_rowsexpected_pressexpected_changeexpected
 // no button pressed
 0000_0001_0_0 // R0

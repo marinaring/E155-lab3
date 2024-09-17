@@ -17,7 +17,7 @@ module row_scanner(
 );
 
 	statetype state, nextstate;
-	logic [5:0] counter;
+	logic [14:0] counter;
 
 	// state register
 	always_ff @(posedge clk) begin

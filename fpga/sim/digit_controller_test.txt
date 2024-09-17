@@ -1,3 +1,6 @@
+// Marina Ring, mring@g.hmc.edu, 9/16/2024
+// This test was done assuming the counter is 6 bits
+// and that the debounce state lasts for ten clock cycles
 // cols_rows_val
 0000__0001__0000_0000 // R0
 0000__0001__0000_0000 // R0

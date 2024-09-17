@@ -9,7 +9,7 @@ import statetype_package::*;
 module scanner_next_state(
 	input statetype state,
 	input logic [3:0] cols,
-	input logic [5:0] counter,
+	input logic [14:0] counter,
 	output statetype nextstate
 );
 	logic press;
@@ -45,9 +45,9 @@ module scanner_next_state(
 			RC3: begin
 					nextstate = (press) ? D3 : R0;  
 				end
-			// debouncing state, we wait 10 clock cycles for the signal to settle
+			// debouncing state, we wait a certain amount of clock cycles for the signal to settle
 			D0: begin
-					if (counter == 10) begin
+					if (counter == 25000) begin
 						nextstate = (press) ? P0 : RC0;
 					end
 					else begin
@@ -55,7 +55,7 @@ module scanner_next_state(
 					end
 				end
 			D1: begin
-					if (counter == 10) begin
+					if (counter == 25000) begin
 						nextstate = (press) ? P1 : RC1;
 					end
 					else begin
@@ -63,7 +63,7 @@ module scanner_next_state(
 					end
 				end
 			D2: begin
-					if (counter == 10) begin
+					if (counter == 25000) begin
 						nextstate = (press) ? P2 : RC2;
 					end
 					else begin
@@ -71,7 +71,7 @@ module scanner_next_state(
 					end
 				end
 			D3: begin
-					if (counter == 10) begin
+					if (counter == 25000) begin
 						nextstate = (press) ? P3 : RC3;
 					end
 					else begin
