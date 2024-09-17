@@ -17,7 +17,7 @@ module row_scanner(
 );
 
 	statetype state, nextstate;
-	logic [14:0] counter;
+	logic [5:0] counter;
 
 	// state register
 	always_ff @(posedge clk) begin
@@ -40,6 +40,6 @@ module row_scanner(
 	assign rows[1] = (state == R1 || state == RC1 || state == D1 || state == P1 || state == W1);
 	assign rows[2] = (state == R2 || state == RC2 || state == D2 || state == P2 || state == W2);
 	assign rows[3] = (state == R3 || state == RC3 || state == D3 || state == P3 || state == W3);
-	assign press = (state == RC0 || state == RC1 || state == RC2 || state == RC3);
+	assign press = ((state == RC0 || state == RC1 || state == RC2 || state == RC3) && (cols[0] || cols[1] || cols[2] || cols[3]));
 	assign change = (state == P0 || state == P1 || state == P2 || state == P3);	
 endmodule

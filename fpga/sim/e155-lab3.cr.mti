@@ -26,12 +26,26 @@ Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oc
 Top level modules:
 	seg_testbench
 
+} {} {}} C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/digital_counter.sv {1 {vlog -work work -sv -stats=none C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/digital_counter.sv
+Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
+-- Compiling module digital_counter
+
+Top level modules:
+	digital_counter
+
 } {} {}} C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/lab3_mr.sv {1 {vlog -work work -sv -stats=none C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/lab3_mr.sv
 Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
 -- Compiling module lab3_mr
 
 Top level modules:
 	lab3_mr
+
+} {} {}} C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/seg_multiplexer.sv {1 {vlog -work work -sv -stats=none C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/seg_multiplexer.sv
+Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
+-- Compiling module seg_multiplexer
+
+Top level modules:
+	seg_multiplexer
 
 } {} {}} C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/row_scanner.sv {1 {vlog -work work -sv -stats=none C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/row_scanner.sv
 Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
@@ -41,13 +55,6 @@ Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oc
 
 Top level modules:
 	row_scanner
-
-} {} {}} C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/seg_multiplexer.sv {1 {vlog -work work -sv -stats=none C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/seg_multiplexer.sv
-Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
--- Compiling module seg_multiplexer
-
-Top level modules:
-	seg_multiplexer
 
 } {} {}} C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/digit_controller.sv {1 {vlog -work work -sv -stats=none C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/digit_controller.sv
 Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
@@ -70,6 +77,13 @@ Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oc
 Top level modules:
 	seg_logic
 
+} {} {}} C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/synchronizer.sv {1 {vlog -work work -sv -stats=none C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/synchronizer.sv
+Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
+-- Compiling module synchronizer
+
+Top level modules:
+	synchronizer
+
 } {} {}} C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/statetype_package.sv {1 {vlog -work work -sv -stats=none C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/statetype_package.sv
 Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
 -- Compiling package statetype_package
@@ -77,12 +91,12 @@ Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oc
 Top level modules:
 	--none--
 
-} {} {}} C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/synchronizer.sv {1 {vlog -work work -sv -stats=none C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/synchronizer.sv
+} {} {}} C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/seg_multiplexer_testbench.sv {1 {vlog -work work -sv -stats=none C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/seg_multiplexer_testbench.sv
 Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
--- Compiling module synchronizer
+-- Compiling module seg_multiplexer_testbench
 
 Top level modules:
-	synchronizer
+	seg_multiplexer_testbench
 
 } {} {}} C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/sim/scanner_next_state_testbench.sv {1 {vlog -work work -sv -stats=none C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/sim/scanner_next_state_testbench.sv
 Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
@@ -101,12 +115,5 @@ Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oc
 
 Top level modules:
 	scanner_next_state
-
-} {} {}} C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/seg_multiplexer_testbench.sv {1 {vlog -work work -sv -stats=none C:/Users/mring/Documents/MicroPs/E155-lab3/fpga/src/seg_multiplexer_testbench.sv
-Model Technology ModelSim - Lattice FPGA Edition vlog 2021.4 Compiler 2021.10 Oct 14 2021
--- Compiling module seg_multiplexer_testbench
-
-Top level modules:
-	seg_multiplexer_testbench
 
 } {} {}}

@@ -11,7 +11,8 @@ module digit_controller(
 		output logic [7:0] val
 );
 
-	logic [3:0] temp_digit, digit1, digit2;
+	logic [3:0] temp_digit, digit1;
+	logic press;
 	logic change;
 	logic [3:0] rows_out;
 	

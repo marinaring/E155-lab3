@@ -14,7 +14,7 @@ module seg_multiplexer(
 
 );
 	logic state, nextstate;
-	logic [15:0] counter;
+	logic [7:0] counter;
 	
 	// register 
 	always_ff @(posedge clk) begin
