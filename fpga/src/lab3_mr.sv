@@ -26,7 +26,7 @@ module lab3_mr(
 
 	digital_counter dig(int_osc, reset, slow_clk);
 	
-	synchronizer sync(slow_clk, ~cols, cols_sync);
+	synchronizer sync(slow_clk, reset, ~cols, cols_sync);
 	digit_controller keypad_input(slow_clk, reset, cols_sync, not_rows, val);
 	seg_multiplexer seg_display(slow_clk, reset, val, multi_switch, s_seg);
 	seg_logic digit(s_seg, not_seg);

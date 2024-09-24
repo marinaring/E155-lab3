@@ -39,6 +39,9 @@
         <Source name="../../src/statetype_package.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
+        <Source name="../../src/digital_counter.sv" type="Verilog" type_short="Verilog">
+            <Options VerilogStandard="System Verilog"/>
+        </Source>
         <Source name="pin_map.pdc" type="Physical Constraints File" type_short="PDC">
             <Options/>
         </Source>

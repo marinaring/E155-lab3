@@ -24,6 +24,7 @@ module digit_controller(
 	always_ff @(posedge clk) begin
 		if (~reset) begin
 			val <= 7'b0;
+			digit1 <= 3'b0;
 		end
 		else if (change) begin
 			val[7:4] <= val[3:0];
