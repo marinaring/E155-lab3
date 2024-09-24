@@ -5,6 +5,7 @@
 
 module synchronizer(
 	input logic clk,
+	input logic reset,
 	input logic [3:0] cols,
 	output logic [3:0] cols_sync
 );
@@ -13,8 +14,13 @@ module synchronizer(
 	
 	// makes it so that the cols signal goes through two registers (hopefully giving it time to stabilize)
 	always_ff @(posedge clk) begin
-		temp <= cols;
-		cols_sync <= temp;
+		if (~reset) begin
+			temp <= 4'b0;
+		end
+		else begin
+			temp <= cols;
+			cols_sync <= temp;
+		end
 	end
 	
 endmodule

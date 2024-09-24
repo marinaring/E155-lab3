@@ -1,3 +1,7 @@
+/*
+	Marina Ring, mring@hmc.edu, 9/23/2024
+	A module to slow down the clock using a counter
+*/
 
 
 module digital_counter(
@@ -8,7 +12,7 @@ module digital_counter(
 	logic [7:0] counter;
 
 	always_ff @(posedge clk) begin
-		if (reset == 0) begin
+		if (~reset) begin
 			counter <= 0;
 		end
 		else begin
