@@ -1,1 +1,22 @@
 This is the code for my Lab 3 in Microprocessor systems. In this lab, I learned how to combine my multiplexed display from Lab 2 with a matrix keypad input. 
+
+
+
+module digital_counter(
+	input clk,
+	input reset,
+	output slow_clk
+);
+	logic [7:0] counter;
+
+	always_ff @(posedge clk) begin
+		if (reset == 0) begin
+			counter <= 0;
+		end
+		else begin
+			counter <= counter + 1;
+		end
+	end
+			
+	assign slow_clk = counter[7];
+endmodule
