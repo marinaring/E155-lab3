@@ -36,10 +36,11 @@ module row_scanner(
 	scanner_next_state scan(state, cols, counter, nextstate);
 	
 	// output logic
-	assign rows[0] = (state == R0 || state == RC0 || state == D0 || state == P0 || state == W0);
-	assign rows[1] = (state == R1 || state == RC1 || state == D1 || state == P1 || state == W1);
-	assign rows[2] = (state == R2 || state == RC2 || state == D2 || state == P2 || state == W2);
-	assign rows[3] = (state == R3 || state == RC3 || state == D3 || state == P3 || state == W3);
+	//assign rows[0] = (state == R0 || state == RC0 || state == D0 ||  state == D1 || state == D2 || state == D3 || state == P0 || state == P1 || state == P2 || state == P3 state == W0 || state == W1 || state == W2 || state == W3);
+	assign rows[0] = !(state == R1 || state == RC1 || state == R2 || state == RC2 || state == R3 || state == RC3);
+	assign rows[1] = !(state == R2 || state == RC2 || state == R3 || state == RC3 || state == R0 || state == RC0);
+	assign rows[2] = !(state == R3 || state == RC3 || state == R0 || state == RC0 || state == R1 || state == RC1);
+	assign rows[3] = !(state == R0 || state == RC0 || state == R1 || state == RC1 || state == R2 || state == RC2);
 	assign press = ((state == RC0 || state == RC1 || state == RC2 || state == RC3) && (cols[0] || cols[1] || cols[2] || cols[3]));
 	assign change = (state == P0 || state == P1 || state == P2 || state == P3);	
 endmodule
